@@ -1,5 +1,5 @@
-import { products } from "./database.js";
-import type { Product } from "./types.js";
+import { products } from "./database";
+import type { Product } from "./types";
 
 function addProduct(productData: Product) {
 	products.push(productData);

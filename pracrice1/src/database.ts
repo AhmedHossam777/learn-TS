@@ -1,4 +1,4 @@
-import { Category, type Product } from "./types.js";
+import { Category, type Product } from "./types";
 
 export const products: Product[] = [
 	{ id: 1, name: "Bread", price: 1.5, category: Category.Food, inStock: true },
