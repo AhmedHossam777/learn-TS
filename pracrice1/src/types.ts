@@ -16,7 +16,7 @@ export interface Product {
 export interface CartItem {
 	quantity: number;
 	product: Product;
-	discount: number;
+	discount?: number;
 }
 
 // type alaise
