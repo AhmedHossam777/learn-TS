@@ -7,6 +7,8 @@ abstract class PaymentProvider {
     abstract refund(amount:number):void;
     abstract getBalance():number
 
+    // abstract pin
+
     checkout(amount:number):void{
         this.validateAmount(amount)
         this.processPayment(amount)
@@ -44,6 +46,8 @@ class StripeProvider extends PaymentProvider{
         return 1500;
     }
 }
+
+// crypto class
 
 const pp = new PaypalProvider()
 pp.checkout(90)
