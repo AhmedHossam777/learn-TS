@@ -1,6 +1,3 @@
-// Iterfaces
-//
-
 const obj: Playable = {
 	name: "ahmed",
 	play() {
