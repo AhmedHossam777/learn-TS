@@ -28,3 +28,6 @@ class OrderService {
     }, 500);
   }
 }
+
+const orderService = new OrderService();
+orderService.createOrder();
