@@ -32,6 +32,12 @@ class OnlinePayment implements PaymentMethod {
   }
 }
 
+class ApplePay implements PaymentMethod {
+  pay(amount: number): string {
+    return `payong ${amount} using apple pay`;
+  }
+}
+
 class PaymentService {
   processPayment(paymentMethod: PaymentMethod, amount: number) {
     const result = paymentMethod.pay(amount);

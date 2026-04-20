@@ -14,6 +14,9 @@ class PaymentProcessor {
     } else if (method === "instapay") {
       // logic paying using instapay
       console.log(`paying ${amount}$ using ${method}`);
+    } else if (method === "apple pay") {
+      // logic paying using apple pay
+      console.log(`paying ${amount}$ using ${method}`);
     } else {
       console.error("method is not exist");
     }
